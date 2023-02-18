@@ -1,4 +1,4 @@
-import './Calculator.css';
+import './calculator.css';
 import PropTypes from 'prop-types';
 
 const CalculatorUi = () => (
