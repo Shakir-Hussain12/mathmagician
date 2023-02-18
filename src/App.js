@@ -1,8 +1,8 @@
-import Calculator from './components/Calculator';
+import CalculatorUi from './components/Calculator';
 
 function App() {
   return (
-    <Calculator />
+    <CalculatorUi />
   );
 }
 

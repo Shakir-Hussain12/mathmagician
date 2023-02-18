@@ -1,7 +1,7 @@
 import './Calculator.css';
 import PropTypes from 'prop-types';
 
-const Calculator = () => (
+const CalculatorUi = () => (
   <div className="container">
     <input
       className="main"
@@ -58,4 +58,4 @@ Operations.propTypes = {
   ops: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 };
 
-export default Calculator;
+export default CalculatorUi;
