@@ -5,8 +5,8 @@ import calculate from '../logic/calculate';
 
 const CalculatorUi = () => {
   const [text, setText] = useState('');
-  const [first, setFirst] = useState('');
-  const [second, setSecond] = useState('');
+  const [first, setFirst] = useState(0);
+  const [second, setSecond] = useState(0);
   const [operator, setOperator] = useState('');
 
   const getText = (e) => {
