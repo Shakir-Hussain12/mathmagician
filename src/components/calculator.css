@@ -16,7 +16,7 @@ body {
   text-align: right;
   font-size: 25px;
   padding: 2% 0;
-  background-color: darkgray;
+  background-color: rgb(138, 135, 135);
   color: white;
   border: none;
   outline: none;
@@ -38,21 +38,19 @@ body {
 
 .left * {
   height: 10vh;
-  width: 15vh;
+  width: 100%;
   font-size: 20px;
-}
-
-.left > button {
-  background-color: red;
+  background-color: lightgray;
+  border: 1px solid;
 }
 
 .Num0 {
-  width: 30vh;
+  width: 200%;
 }
 
 .Dec {
-  width: 15vh;
-  margin-left: 15vh;
+  width: 100%;
+  margin-left: 100%;
 }
 
 .operations {
@@ -62,16 +60,8 @@ body {
 
 .operations * {
   height: 10vh;
-  width: 15vh;
+  width: 370%;
   font-size: 20px;
-  background-color: yellow;
-}
-
-.operations > button:last-child {
-  background-color: blue;
-}
-
-.left > button.Num1 ~ button,
-.left > .Num1 {
-  background-color: lightgray;
+  background-color: rgb(248, 118, 31);
+  border: 1px solid;
 }

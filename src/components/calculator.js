@@ -1,6 +1,4 @@
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable react/no-array-index-key */
-import './calculator.css';
+import './Calculator.css';
 import PropTypes from 'prop-types';
 
 const Calculator = () => (
@@ -21,9 +19,12 @@ const Calculator = () => (
 const Numeric = ({ nums }) => (
   <div className="left">
     {
-        nums.map((number, ind) => (
-          <button type="button" key={`Num${ind}`} className={number === '.' ? 'Dec' : `Num${number}`}>{number}</button>
-        ))
+        nums.map((number, ind) => {
+          const myKey = ind;
+          return (
+            <button type="button" key={`Num${myKey}`} className={number === '.' ? 'Dec' : `Num${number}`}>{number}</button>
+          );
+        })
     }
   </div>
 );
@@ -33,15 +34,18 @@ Numeric.defaultProps = {
 };
 
 Numeric.propTypes = {
-  nums: PropTypes.array,
+  nums: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 };
 
 const Operations = ({ ops }) => (
   <div className="operations">
     {
-        ops.map((op, ind) => (
-          <button type="button" key={`Op${ind}`} className={`Op${op}`}>{op}</button>
-        ))
+        ops.map((op, ind) => {
+          const myKey = ind;
+          return (
+            <button type="button" key={`Op${myKey}`} className={`Op${op}`}>{op}</button>
+          );
+        })
     }
   </div>
 );
@@ -51,7 +55,7 @@ Operations.defaultProps = {
 };
 
 Operations.propTypes = {
-  ops: PropTypes.array,
+  ops: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 };
 
 export default Calculator;
