@@ -1,4 +1,4 @@
-import CalculatorUi from './components/Calculator';
+import CalculatorUi from './components/CalculatorUi';
 
 function App() {
   return (
