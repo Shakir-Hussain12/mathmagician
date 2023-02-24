@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CalculatorUi from './pages/CalculatorUi';
 import Home from './pages/Home';
