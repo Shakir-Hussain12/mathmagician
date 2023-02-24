@@ -1,7 +1,7 @@
 body {
   background-color: lightblue;
   box-sizing: border-box;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .main-split {
@@ -20,22 +20,22 @@ body {
 
 .container {
   margin-top: 10%;
-    margin-right: 10%;
-    text-align: center;
-    min-width: 358px;
-    box-shadow: 5px 5px 5px black;
+  margin-right: 10%;
+  text-align: center;
+  min-width: 358px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .main {
   min-width: 101%;
-    line-height: 40px;
-    text-align: right;
-    font-size: 25px;
-    padding: 2% 0;
-    background-color: rgb(138, 135, 135);
-    color: white;
-    border: none;
-    outline: none;
+  line-height: 40px;
+  text-align: right;
+  font-size: 25px;
+  padding: 2% 0;
+  background-color: rgb(138, 135, 135);
+  color: white;
+  border: none;
+  outline: none;
 }
 
 ::placeholder {
@@ -48,8 +48,8 @@ body {
 
 .left {
   display: grid;
-    grid-template-columns: repeat(3, minmax(5.6rem, 1fr));
-    gap: 0;
+  grid-template-columns: repeat(3, minmax(5.6rem, 1fr));
+  gap: 0;
 }
 
 .left * {
@@ -76,8 +76,8 @@ body {
 
 .operations * {
   height: 10vh;
-    width: 368%;
-    font-size: 20px;
-    background-color: rgb(248, 118, 31);
-    border: 1px solid;
+  width: 368%;
+  font-size: 20px;
+  background-color: rgb(248, 118, 31);
+  border: 1px solid;
 }
