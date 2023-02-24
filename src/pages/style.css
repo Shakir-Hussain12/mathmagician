@@ -1,0 +1,11 @@
+.home-container {
+    padding: 3%;
+    font-size: 18px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 25px;
+    padding: 13%;
+    font-weight: bold;
+}
