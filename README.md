@@ -44,7 +44,7 @@ After you're finished please remove all the comments and instructions!
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
-  - [� Acknowledgments ](#-acknowledgments-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -78,8 +78,8 @@ This project was built using these technologies.
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Here]()
+> In Progress...
+<!-- - [Live Link]() -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

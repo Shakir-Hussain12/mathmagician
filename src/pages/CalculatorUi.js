@@ -1,7 +1,8 @@
-import './calculator.css';
+import '../components/calculator.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import calculate from '../logic/calculate';
+import Navbar from '../components/Navbar';
 
 const CalculatorUi = () => {
   const [text, setText] = useState('');
@@ -110,18 +111,28 @@ const CalculatorUi = () => {
   };
 
   return (
-    <div className="container">
-      <input
-        className="main"
-        placeholder="0"
-        type="text"
-        value={text}
-        onChange={() => setText(text)}
-      />
-      <div className="buttons">
-        <Numeric nums={['AC', '+/-', '%', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.']} />
-        <div className="right">
-          <Operations ops={['+', '-', '*', '/', '=']} />
+    <div>
+      <Navbar />
+      <div className="main-split">
+        <div className="text">
+          <h3>
+            Let&apos;s do some Maths
+          </h3>
+        </div>
+        <div className="container">
+          <input
+            className="main"
+            placeholder="0"
+            type="text"
+            value={text}
+            onChange={() => setText(text)}
+          />
+          <div className="buttons">
+            <Numeric nums={['AC', '+/-', '%', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.']} />
+            <div className="right">
+              <Operations ops={['+', '-', '*', '/', '=']} />
+            </div>
+          </div>
         </div>
       </div>
     </div>

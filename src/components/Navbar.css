@@ -1,0 +1,31 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.nav-header {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-inline-start: -4%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  min-width: 30%;
+  font-weight: bold;
+}
+
+.nav-list > * {
+  border-left: 1px solid;
+  padding: 0 5%;
+}
